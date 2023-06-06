@@ -1,0 +1,52 @@
+@import 'reset';
+@font-face {
+  font-family: 'Stratos';
+  src: url(../../assets/Stratos-Regular.woff2) format(woff2);
+}
+
+:root {
+  --main-dark: #181818;
+  --middle-dark: #2e2e2e;
+  --dark-gray: #4e4e4e;
+  --menu-dark: #1c1c1c;
+  --dark: #222;
+  --more-dark: #1e1e1e;
+  --hover-color: #d9b6ff;
+  --active-color: #ad61ff;
+  --scrollbar-bg-color: #4b4949;
+  --search-select-bg-color: #313131;
+  --color-progress-bar: #9a48f1;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--main-dark);
+  font-family: 'Stratos';
+  color: #fff;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  min-height: 900px;
+}
+
+.styled-scroll-bar {
+  &::-webkit-scrollbar {
+    width: 4px;
+    background: var(--scrollbar-bg-color);
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 4px;
+    border-radius: 2px;
+    background: #ffffff;
+  }
+}

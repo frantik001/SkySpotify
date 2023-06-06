@@ -1,0 +1,19 @@
+.menuBox {
+  height: 100vh;
+  min-width: 244px;
+}
+
+.logoSvg {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  width: 118px;
+  z-index: 5;
+}
+
+.themeSvg {
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
+  color: #fff;
+}
