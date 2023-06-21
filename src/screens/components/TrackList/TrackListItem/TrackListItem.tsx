@@ -45,7 +45,7 @@ const TrackListItem = ({
           src={theme.name === Theme.Dark ? coverDark : coverLight}
           alt="Album cover"
         />
-        {trackData.name} {trackData.release_date}
+        {trackData.name}
       </S.Col1>
       <S.Col2>{trackData.author}</S.Col2>
       <S.Col3>{trackData.album}</S.Col3>

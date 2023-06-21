@@ -35,7 +35,6 @@ const Menu = () => {
       <S.Slider isMenuShow={isMenuShow}>
         <Link to="/">Главная</Link>
         <Link to={LinkPath.Favorites}>Мои треки</Link>
-        <Link to={LinkPath.Test404}>Page 404 test</Link>
         <LogoutButton />
         <Icon
           icon={isDarkTheme ? IconSprite.ThemeDark : IconSprite.ThemeLight}
