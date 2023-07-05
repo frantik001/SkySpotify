@@ -22,8 +22,7 @@ const GlobalStyle = createGlobalStyle`
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		max-height: 100vh;
-		min-height: 900px;
+		height: 100vh;
 	}
 `
 export const scrollBarStyles = css`

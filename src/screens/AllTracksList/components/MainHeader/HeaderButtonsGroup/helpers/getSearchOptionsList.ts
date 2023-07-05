@@ -1,6 +1,6 @@
 import { TRACKS_NO_DATA } from '../constants'
 import { TrackType } from '@/types'
-import { Button, SearchField } from '../enum'
+import { SearchField } from '../enum'
 import { SearchByYear } from '../type'
 
 const getSearchOptionsList = (

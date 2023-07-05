@@ -1,5 +1,5 @@
 import { Options } from 'ky'
-import { AuthRequestType } from '../apiTypes'
+// import { AuthRequestType } from '../apiTypes'
 import { EndpointsType } from '../queries'
 
 export enum ReqMethod {

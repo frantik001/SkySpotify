@@ -66,17 +66,8 @@ export const Slider = styled.div<SliderType>`
   padding: 152px 36px;
   gap: 32px;
   transition: left 0.3s ease-in-out;
-  ${({ isMenuShow }) => (isMenuShow ? `left: 0;` : `left: -100%;`)}
-
-  & > * {
-    &:hover {
-      color: ${({ theme }) => theme.color.hover};
-      transition: color 0.15s;
-    }
-    &:active {
-      color: ${({ theme }) => theme.color.active};
-    }
-  }
+  ${({ isMenuShow }) => (isMenuShow ? `left: 0;` : `left: -100%;`)};
+  color: ${({ theme }) => theme.color.textMain};
 `
 
 export default Burger
