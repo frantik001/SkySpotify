@@ -5,15 +5,16 @@ import * as S from './NotFoundScreen.style'
 import smileCrying from '@/img/smileCrying.png'
 import Menu from '../components/Menu/Menu'
 import PlayerBar from '../components/PlayerBar/PlayerBar'
-import { useAppSelector } from '@/store/hooks/reduxHooks'
-import { RootStateType } from '@/store'
+
+import useUserStore from '@/store/hooks/useUserStore'
 
 const NotFoundScreen = () => {
   const navigate = useNavigate()
-  const userLogin = useAppSelector((state: RootStateType) => state.user.login)
-  let menu, bar
+  const isLogin = useUserStore('login')
+  let menu
+  let bar
 
-  if (userLogin) {
+  if (isLogin) {
     menu = <Menu />
     bar = <PlayerBar />
   }
@@ -31,7 +32,7 @@ const NotFoundScreen = () => {
         </p>
         <Button
           style={ButtonStyle.Purple}
-          title={userLogin ? 'Вернуться на главную' : 'Войти'}
+          title={isLogin ? 'Вернуться на главную' : 'Войти'}
           action={() => navigate('/')}
         />
       </S.notFoundMain>
